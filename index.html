@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todoist</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>UMC Study Plan</h2>
+    <hr class='hr-solid'/>
+    <div class="input-section">
+        <input type="text" id="todo-input" placeholder="스터디 계획을 작성해보세요!" onkeypress="addTaskOnEnter(event)">
+    </div>
+<div class="container">
+    <div class="lists-container">
+        <div class="list-column">
+            <h3 class= 'my-underline'>해야 할 일</h3>
+
+            <ul class="todo-list" id="todo-list">
+            </ul>
+        </div>
+        <div class="list-column">
+            <h3 class= 'my-underline'>해낸 일</h3>
+            <ul class="done-list" id="done-list">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
